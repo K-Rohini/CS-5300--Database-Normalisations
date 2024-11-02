@@ -1,0 +1,7 @@
+OrderID,CustomerID,DrinkID,Milk
+1001,1,1,ND
+1001,1,1,D
+1002,1,2,D
+1003,2,3,ND
+1003,2,3,D
+1003,2,4,ND
