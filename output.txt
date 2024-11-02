@@ -1,0 +1,61 @@
+New Relation: Candidate
+ OrderID      Date TotalCost TotalDrinkCost TotalFoodCost  CustomerID CustomerName  DrinkID                DrinkName DrinkSize  DrinkQuantity Milk  FoodID          FoodName  FoodQuantity
+    1001 6/30/2024    $7.25          $7.25         $0.00            1  Alice Brown        1              Caffe Latte    Grande              1   ND       0               NaN             0
+    1002 6/30/2026    $9.98          $5.99         $3.99            2 David Miller        2   Iced Caramel Macchiato      Tall              2    D       3 Blueberry Muffin              1
+    1002 6/30/2026    $9.98          $5.99         $3.99            2 David Miller        3        Iced Matcha Latte    Grande              1   ND       3 Blueberry Muffin              1
+    1003 6/29/2024  $115.00        $115.00         $0.00            3 Emily Garcia        4 Vanilla Bean Frappuccino     Venti              8   ND       0               NaN             0
+
+New Relation: 2
+ OrderID  DrinkID  FoodID PromocodeUsed
+    1001        1       0          NONE
+    1002        2       3     SUMMERFUN
+    1002        3       3     SUMMERFUN
+    1003        4       0     SUMMERFUN
+    1003        4       0       JUNEVIP
+
+New Relation: 3
+ OrderID  DrinkID  FoodID DrinkIngredient
+    1001        1       0        Espresso
+    1001        1       0        Oat Milk
+    1002        2       3        Expresso
+    1002        2       3   Vanilla Syrup
+    1002        2       3            Milk
+    1002        2       3             Ice
+    1002        3       3          Matcha
+    1002        3       3    Coconut Milk
+    1002        3       3           Ice} 
+    1003        4       0          Coffee
+    1003        4       0             Ice
+    1003        4       0   Vanilla Syrup
+    1003        4       0        Soy Milk
+
+New Relation: 4
+ OrderID  DrinkID  FoodID DrinkAllergen
+    1001        1       0         Oat} 
+    1002        2       3         Dairy
+    1002        2       3          Nuts
+    1002        3       3          Nuts
+    1003        4       0          Nuts
+    1003        4       0           Soy
+
+New Relation: 5
+ OrderID  DrinkID  FoodID FoodIngredient
+    1001        1       0           NONE
+    1002        2       3          Flour
+    1002        2       3          Sugar
+    1002        2       3    Blueberries
+    1002        2       3           Eggs
+    1002        3       3          Flour
+    1002        3       3          Sugar
+    1002        3       3    Blueberries
+    1002        3       3           Eggs
+    1003        4       0           NONE
+
+New Relation: 6
+ OrderID  DrinkID  FoodID FoodAllergen
+    1001        1       0         NONE
+    1002        2       3        Wheat
+    1002        2       3          Egg
+    1002        3       3        Wheat
+    1002        3       3          Egg
+    1003        4       0         NONE
